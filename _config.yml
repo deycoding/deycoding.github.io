@@ -1,4 +1,16 @@
-title: "Abhishek Dey"
-description: "Building LLMs from scratch"
+# Site settings
+title: Abhishek Dey
+email:
+description: "Building LLMs from scratch."
+baseurl: ""
 url: "https://deycoding.github.io"
+github_username: deycoding
+
+# Build settings
 markdown: kramdown
+permalink: pretty
+highlighter: rouge
+kramdown:
+  input: GFM
+  auto_ids: true
+  syntax_highlighter: rouge
