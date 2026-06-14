@@ -27,6 +27,7 @@ a:visited { color: #205caa; }
 .footer-links { font-size: 14px; color: #828282; }
 .footer-links a { color: #828282; }
 .footer-links a:hover { color: #333; }
+.footer-icon { width: 16px; height: 16px; fill: #828282; vertical-align: middle; margin-right: 3px; position: relative; top: -1px; }
 
 /* Page content */
 .page-content { padding: 30px 0; background-color: #fff; }
