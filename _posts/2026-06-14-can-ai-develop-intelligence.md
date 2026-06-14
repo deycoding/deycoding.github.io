@@ -5,9 +5,9 @@ date: 2026-06-14
 categories: [ai, agi]
 ---
 
-*By Abhishek Dey | June 14, 2026 | ORCID: [0009-0006-5427-7058](https://orcid.org/0009-0006-5427-7058)*
+By Abhishek Dey | June 14, 2026 | ORCID: [0009-0006-5427-7058](https://orcid.org/0009-0006-5427-7058)
 
-## The Question
+### The Question
 
 We often hear that AI can overtake humans - that AI can build its own intelligence without training done by humans. In other words, without the structured post-training phases like SFT (Supervised Fine-Tuning), Chain-of-Thought, RLHF, and so on that humans carefully design after pre-training - if we simply leave a model at the pre-trained stage and walk away, can it develop intelligence on its own? Can it grow, reason, and become something more than what it was when training stopped?
 
@@ -15,15 +15,15 @@ The short answer is no. A pre-trained language model is a frozen snapshot of sta
 
 In what circumstances could a model develop intelligence? There are two possible paths, and both require deep human involvement. The first is the structured training path - humans curate datasets, design SFT templates, build reward models for RLHF, create chain-of-thought examples, and run iterative training cycles. Each round of improvement is designed, funded, and evaluated by humans. The model appears more intelligent after each phase, but it is humans who decided what "intelligent" looks like and engineered the training to get there. The second path is building autonomous learning systems - where humans design an architecture that can learn continuously from the real world, update its own weights, set goals, and evaluate its own progress. This doesn't exist today, but even if it did, humans would have designed the learning mechanism, defined the reward signals, built the safety constraints, and decided when to deploy it. In both paths - whether through manual training phases or through building self-learning systems - humans are the architects of the intelligence. The model never bootstraps itself from nothing. The difference is only whether humans apply intelligence step-by-step (training runs) or build a machine that applies it continuously (autonomous learning) - but in neither case does the model develop intelligence independently of human design.
 
-## What a Pre-Trained Model Actually Is
+### What a Pre-Trained Model Actually Is
 
 A frozen mathematical function - matrix multiplications with fixed weights. It does ONE thing: predict the next token based on patterns it saw during training, I am talking about decoder here not encoder. Once training stops, the model is a static snapshot. It cannot grow, learn, or change. A pre-trained model left alone will NOT develop intelligence. It will produce the same quality outputs forever - no improvement, no self-awareness, no goals.
 
-## What It Cannot Do (Without Human Intervention)
+### What It Cannot Do (Without Human Intervention)
 
 Without human intervention, a pre-trained model cannot learn from new experiences because there are no weight updates happening without an active training run. It cannot reflect on its own outputs because there is no self-awareness loop built into the architecture. It cannot set goals or pursue them because it has no agency and no motivation - it only responds when prompted. It cannot modify itself because the weights are permanently frozen after training ends. And it cannot discover new knowledge because all it does is recombine patterns from its training data - it does not independently observe the world or run experiments, though it can find novel patterns within existing human knowledge that humans themselves missed.
 
-## Common Claims vs Reality
+### Common Claims vs Reality
 
 There are several widespread misconceptions about what AI can do independently. People claim that AI learns on its own, but in reality learning only happens during training runs that humans configure, fund, and execute. People say AI develops new knowledge, but what it actually does is recombine patterns from its training data - it does not independently observe the world or run experiments, though it can find novel patterns within existing human knowledge that humans themselves missed. The idea that AI will improve itself is only true if humans deliberately build a loop where the model is evaluated, retrained, and redeployed - without that loop, nothing changes. The belief that a pre-trained model grows smarter over time is simply false - same weights produce the same outputs forever, the model is frozen the moment training ends. And the assumption that more data equals understanding is a confusion between pattern matching and comprehension - feeding more data makes the model better at predicting likely sequences, not at understanding what those sequences mean.
 
@@ -35,7 +35,7 @@ There are several widespread misconceptions about what AI can do independently. 
 | "Pre-trained model grows smarter" | No - same weights = same outputs forever. Frozen. |
 | "More data = understanding" | More data = better pattern matching, not comprehension |
 
-## When Will AGI Happen?
+### When Will AGI Happen?
 
 If you ask the people building these systems, you get wildly different answers - and that itself tells you something. Sam Altman at OpenAI believes we are 3-5 years away and that scaling current approaches with new architectures will get us there. Demis Hassabis at DeepMind thinks it is more like 10-15 years and requires combining LLMs with reasoning engines and world models - a fundamentally harder problem than just making models bigger. Yann LeCun at Meta, one of the founders of deep learning, says current LLMs are a dead end entirely and we need a paradigm shift that nobody has figured out yet - he puts AGI decades away. Most researchers in the field simply say they do not know. The honest truth is that the people closest to the work disagree the most, which means anyone claiming a confident timeline is either selling something or guessing.
 
@@ -46,11 +46,11 @@ If you ask the people building these systems, you get wildly different answers -
 | Yann LeCun (Meta) | Decades away | Current LLMs are a dead end, need new paradigm |
 | Most researchers | Unknown | No consensus |
 
-## Can Agentic AI Bridge the Gap to AGI?
+### Can Agentic AI Bridge the Gap to AGI?
 
 Agentic AI is the closest augmentation toward AGI - but it is not AGI itself. It simulates intelligent behavior by wrapping a frozen model with human-designed infrastructure: memory, tools, retry loops. The model does not become smarter - it just operates within a smarter framework. The moment you remove that framework, the model is back to basic next-token prediction. AGI means the model itself understands, adapts, and grows. Agentic AI means humans engineered a system that makes a static model look like it does.
 
-## What Is Nearest to AGI Today?
+### What Is Nearest to AGI Today?
 
 None of the individual training techniques - SFT, RLHF, or Chain-of-Thought - bring us to AGI on their own. But the closest recent step toward AGI-like behavior is test-time compute (reasoning at inference) - what OpenAI o1/o3 and DeepSeek-R1 demonstrate. These models spend more compute thinking during inference - they generate internal reasoning chains, backtrack, verify, and retry before answering. This is the first time a model appears to reason rather than just pattern-match.
 
@@ -66,7 +66,7 @@ But even test-time compute is still not AGI because the model does not learn fro
 
 What is actually needed for AGI beyond all current techniques: persistent learning (remember and grow across interactions), world models (internal simulation of cause and effect), planning with search (explore possibilities before acting, like AlphaGo but general), and grounding (connecting language to real-world experience). The current frontier is combining CoT + reinforcement learning + search - that is the closest anyone is to something resembling general reasoning, but it remains narrow.
 
-## Conclusion
+### Conclusion
 
 This is not a fight between models and humans. AI is not coming for humanity. The real race is between the intelligent humans who know the recipe to make models intelligent - who understand pre-training, fine-tuning, data curation, reward design, and architecture innovation - versus those who do not. The model is just a tool. It amplifies whoever wields it. The divide is not man versus machine - it is the few who know how to build and direct these systems versus the many who will only ever be consumers of them.
 
