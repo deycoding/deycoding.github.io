@@ -1,7 +1,7 @@
 # Site settings
 title: Abhishek Dey
 email:
-description: "Building LLMs from scratch."
+description: "Training Deep Neural Networks from Scratch"
 baseurl: ""
 url: "https://deycoding.github.io"
 github_username: deycoding
