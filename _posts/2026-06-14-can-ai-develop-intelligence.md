@@ -14,15 +14,19 @@ We often hear that AI can overtake humans - that AI can build its own intelligen
 The short answer is no. A pre-trained language model is a frozen snapshot of statistical patterns extracted from text. Once training ends, the weights are fixed. The model will produce the same quality outputs today, tomorrow, and ten years from now - it does not learn from conversations, does not reflect on mistakes, does not pursue goals, and has no mechanism to improve itself. Without human-driven post-training (SFT to teach behavior, RLHF to align preferences, CoT to teach reasoning), the model remains a powerful but static pattern-completion engine. It will never "wake up" or develop understanding on its own, because understanding, motivation, and self-improvement are not properties that emerge from frozen matrix multiplications - no matter how large the model is.
 
 ```
-┌──────────────┐       ┌──────────┐       ┌──────────┐       ┌──────────┐
-│ PRE-TRAINING │──────▶│   SFT    │──────▶│   RLHF   │──────▶│   CoT    │
-└──────────────┘       └──────────┘       └──────────┘       └──────────┘
-       │                     │                   │                   │
-  Raw text (TBs)       Instruction pairs    Chosen/rejected     <think>...</think>
-  Next-token pred      Q&A format           Human preferences   Step-by-step
-       │                     │                   │                   │
-       ▼                     ▼                   ▼                   ▼
-   Knowledge             Behavior             Safety             Reasoning
+┌──────────────┐       ┌──────────────┐       ┌──────────────┐       ┌──────────────┐
+│ PRE-TRAINING │──────▶│     SFT      │──────▶│     RLHF     │──────▶│     CoT      │
+└──────────────┘       └──────────────┘       └──────────────┘       └──────────────┘
+       │                      │                      │                      │
+┌──────────────┐       ┌──────────────┐       ┌──────────────┐       ┌──────────────┐
+│ Data:        │       │ Data:        │       │ Data:        │       │ Data:        │
+│ Wikipedia,   │       │ 10-100K      │       │ Chosen/      │       │ <think>      │
+│ books, web   │       │ instruct     │       │ rejected     │       │ reasoning    │
+│ (TB scale)   │       │ pairs        │       │ pairs        │       │ </think>     │
+└──────────────┘       └──────────────┘       └──────────────┘       └──────────────┘
+       │                      │                      │                      │
+       ▼                      ▼                      ▼                      ▼
+   Knowledge              Behavior                Safety              Reasoning
 ```
 
 In what circumstances could a model develop intelligence? There are two possible paths, and both require deep human involvement. The first is the structured training path - humans curate datasets, design SFT templates, build reward models for RLHF, create chain-of-thought examples, and run iterative training cycles. Each round of improvement is designed, funded, and evaluated by humans. The model appears more intelligent after each phase, but it is humans who decided what "intelligent" looks like and engineered the training to get there. The second path is building autonomous learning systems - where humans design an architecture that can learn continuously from the real world, update its own weights, set goals, and evaluate its own progress. This doesn't exist today, but even if it did, humans would have designed the learning mechanism, defined the reward signals, built the safety constraints, and decided when to deploy it. In both paths - whether through manual training phases or through building self-learning systems - humans are the architects of the intelligence. The model never bootstraps itself from nothing. The difference is only whether humans apply intelligence step-by-step (training runs) or build a machine that applies it continuously (autonomous learning) - but in neither case does the model develop intelligence independently of human design.
