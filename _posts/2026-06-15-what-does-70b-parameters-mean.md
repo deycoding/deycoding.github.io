@@ -19,7 +19,7 @@ People talk about parameters, flex the model size they use and they talk about t
 
 A 70B parameter model means there are 70 billion individual numbers (weights) stored across all the matrices in the network. Here network means Neural Network (NN). This number comes directly from the architecture choices: the embedding layer (vocabulary size x dimension), each transformer layer's attention matrices (Q, K, V, output projections) and feed-forward network matrices (two or three large linear layers), repeated across all layers, plus the final output projection. For example, if you set dimension to 8192, use 80 layers, and have an FFN that expands to 28672 - the attention matrices in each layer contribute roughly 4 x 8192 x 8192 = 268M parameters, the FFN contributes roughly 3 x 8192 x 28672 = 704M parameters, multiply by 80 layers and add the embedding - you land at approximately 70 billion. The "70B" is not a target you aim for arbitrarily; it falls out of choosing a specific depth (layers), width (dimension), and expansion ratio (FFN size) that together give the model enough capacity to store the patterns from trillions of tokens of training data. Being a science student, I always believe in simplifying the math concepts and logic - therefore don't worry, I will explain this maths in the next section in the best possible way and remaining is your study.
 
-![Neural Network Architecture](/assets/images/nn-arch.png){: style="max-width:100%; width:690px"}
+![Neural Network Architecture](/assets/images/nn-arch.png){: style="max-width:100%; width:760px"}
 
 *Image 1: Self attention architecture*
 
