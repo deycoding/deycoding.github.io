@@ -21,7 +21,7 @@ A 70B parameter model means there are 70 billion individual numbers (weights) st
 
 ![Neural Network Architecture](/assets/images/nn-arch.png){: style="max-width:100%; width:760px; display:block; margin:1rem auto"}
 
-*Image 1: Self attention architecture*{: style="text-align:center; display:block"}
+*Self attention architecture*{: style="text-align:center; display:block"}
 
 ### The Size Illusion: What People Infer from Model Size
 
