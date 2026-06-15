@@ -11,7 +11,7 @@ By Abhishek Dey | June 15, 2026 | ORCID: [0009-0006-5427-7058](https://orcid.org
 
 I have chosen 70B randomly for the title - however, the reason for this neural resonance is that it sits right where the real tradeoff conversation lives: big enough to reason, small enough to actually serve.
 
-![Loudspeaker](/assets/images/loud-speaker.png){: style="width:280px"}
+![GPU Jungle](/assets/images/gpu-jungle.png){: style="width:280px"}
 
 People talk about parameters, flex the model size they use and they talk about tokens as if the numbers alone tell the full story - "70B is better than 7B," "we need a larger model," "bigger is always better." Most data scientists and engineers reach for the biggest model available without truly understanding what those 70 billion parameters actually represent, where the number comes from, or what each component contributes to the model's capability. They see 70B as a badge of quality rather than what it really is - an architectural consequence of specific design choices about depth, width, and expansion ratio. The real understanding comes not from knowing the number, but from knowing what tradeoffs that number carries - in training cost, serving infrastructure, inference speed, and whether your actual problem even needs that much capacity. Until you can answer "why is this model 70B and not 7B, and does my use case benefit from the difference?" - you are choosing blindly. This post breaks down exactly what 70 billion parameters means, where the number comes from, what each component does, and when bigger genuinely matters versus when it's just expensive overkill.
 
