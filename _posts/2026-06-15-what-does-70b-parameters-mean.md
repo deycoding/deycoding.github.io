@@ -70,7 +70,7 @@ P ~ 70B
 
 Big models handle ambiguity and nuance well - they understand context, sarcasm, and implicit meaning that smaller models take literally. They can chain 5-10 logical steps without losing track, making them strong at multi-step reasoning and complex problem solving. They have enough capacity to remember obscure and niche knowledge, be fluent in 20+ languages simultaneously without sacrificing quality in any one, and handle diverse tasks from code to creative writing to mathematical proofs within a single model.
 
-![Big vs Small Models](/assets/images/avenger-big-small.png){: style="max-width:100%; width:760px; display:block; margin:1rem auto"}
+![Big vs Small Models](/assets/images/avenger-big-small.png){: style="max-width:100%; width:760px; margin:1rem 0"}
 
 But that power comes at a cost. Training from scratch runs $2-10 million - only well-funded labs can afford it. Serving requires multi-GPU setups costing $5-15K per month per deployment. Inference is slow at 50-100ms per token, which creates noticeable latency for users. Most critically, using 70B to answer simple questions is like driving a truck to buy milk - the vast majority of real-world queries don't need that much capacity. And iteration is painful - each experiment takes weeks and costs millions, making rapid prototyping impossible.
 
