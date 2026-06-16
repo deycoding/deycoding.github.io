@@ -86,6 +86,8 @@ The tradeoff is capability ceiling. Small models lose track after 2-3 logical st
 
 If you are an individual or small team solving a specific problem - classification, routing, domain Q&A - with a budget under $5K and need real-time latency, train small (1B-3B). You'll own the model, iterate fast, and deploy cheaply. If you are a startup building a product that needs general capability but domain-adapted, fine-tune a medium model (7B-13B) using LoRA on existing open weights - no need to train from scratch. If you are a well-funded lab with $10M+ budget, a team of 10+ ML engineers, 64+ GPUs, and need frontier performance across diverse tasks for a general-purpose product like a chatbot or coding copilot - then and only then does training 70B+ make sense.
 
+![Who Is Training What](/assets/images/WITW.png){: style="max-width:100%; width:760px; margin:1rem 0"}
+
 ### Flexing Muscles with Big Models
 
 The uncomfortable truth is that most companies announcing "we trained a 70B model" didn't need to. They did it because it signals technical capability - to investors, to recruiters, to competitors. A well-trained 7B model with domain-specific data would have served their product just as well at one-hundredth the cost. The model size arms race is partly engineering, partly marketing. The smart money is on finding the smallest model that solves your actual problem - then investing the savings into better data, better serving infrastructure, and faster iteration cycles. OpenAI didn't win by having the biggest model - they won by having the best data pipeline and fastest iteration speed.
