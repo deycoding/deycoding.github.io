@@ -78,9 +78,7 @@ But that power comes at a cost. Training from scratch runs $2-10 million - only 
 
 ### Small Models (1B-7B): The Precision Tool
 
-Small models are cheap to train ($50 for 1B, up to $5K for 7B from scratch), fast at inference (5-15ms per token), and can run on a single GPU or even a mobile phone when quantized. They're easy to iterate on - train, evaluate, retrain in hours rather than months. When fine-tuned on domain-specific data, they can match or outperform big models on that particular task, making them ideal as specialist tools rather than general-purpose assistants.
-
-The tradeoff is capability ceiling. Small models lose track after 2-3 logical steps, take things literally and miss nuance, and forget old knowledge faster when learning new things. They work best as single-task specialists - excellent at one domain but mediocre at everything else. They also demand more careful data curation because every training example has proportionally more impact on the final model.
+Small models are cheap to train ($50 for 1B, up to $5K for 7B from scratch), fast at inference (5-15ms per token), and can run on a single GPU or even a mobile phone when quantized. They're easy to iterate on - train, evaluate, retrain in hours rather than months. When fine-tuned on domain-specific data, they can match or outperform big models on that particular task, making them ideal as specialist tools rather than general-purpose assistants. The tradeoff is capability ceiling. Small models lose track after 2-3 logical steps, take things literally and miss nuance, and forget old knowledge faster when learning new things. They work best as single-task specialists - excellent at one domain but mediocre at everything else. They also demand more careful data curation because every training example has proportionally more impact on the final model.
 
 ### Who Should Train What
 
