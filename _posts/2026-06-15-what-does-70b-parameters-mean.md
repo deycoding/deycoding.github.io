@@ -88,7 +88,7 @@ If you are an individual or small team solving a specific problem - classificati
 
 ### Flexing Muscles with Big Models
 
-The uncomfortable truth is that most companies announcing "we trained a 70B model" didn't need to. They did it because it signals technical capability - to investors, to recruiters, to competitors. A well-trained 7B model with domain-specific data would have served their product just as well at one-hundredth the cost. The model size arms race is partly engineering, partly marketing. The smart money is on finding the smallest model that solves your actual problem - then investing the savings into better data, better serving infrastructure, and faster iteration cycles. OpenAI didn't win by having the biggest model - they won by having the best data pipeline and fastest iteration speed.
+The reality is that most companies announcing "we trained a 70B model" or "we use a 70B model" didn't need to. They jumped on the bandwagon because bigger signals technical capability to various stakeholders. A well-trained 7B model with domain-specific data would have served their product just as well at significantly lower cost. For infrastructure, you can host the model on Amazon Bedrock, which solves your infra problem. The model size arms race is a mix of engineering and marketing. The real skill is to be frugal and sustainable - to train or identify a model that fits your need and serves your use case, rather than flexing model muscle.
 
 ### Conclusion
 
