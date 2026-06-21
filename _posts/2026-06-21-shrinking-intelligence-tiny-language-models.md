@@ -19,7 +19,7 @@ The thing is, there's no margin for error. One wrong throttle move and you're in
 
 ### Tiny Models Under the Microscope
 
-A tiny model is a neural network with less than 10 million parameters. To put that in context, GPT-4 has over a trillion, Llama 3 has 70 billion, and even the smallest useful open models start around 1 billion. So when we say tiny, we mean 100 to 1000 times smaller than what people normally consider a language model. If we design it well, we can even train and inference a tiny model using just a CPU.
+A tiny model is a neural network with less than 10 million parameters. To put that in context, frontier models typically contain tens to hundreds of billions of parameters, and even the smallest useful open models start around 1 billion. So when we say tiny, we mean 100 to 1000 times smaller than what people normally consider a language model. If we design it well, we can even train and inference a tiny model using just a CPU.
 
 Within this blog, I will walk through my experiments on tiny decoder models. I trained four different sizes: 10M, 7M, 5M, and 2.5M parameters, all on the same dataset, and compared their performance against nine inference metrics (TTFT, TPS, total latency, tokens generated, perplexity, avg token probability, repetition rate, coherence length, and vocab diversity). I designed and architected these models using Jupyter Notebook, wrote the training code in PyTorch from scratch, trained a custom BPE tokenizer for each vocabulary size, and ran all experiments on a single GPU. The goal was to find out where the floor is: how small can a decoder model get before it stops producing anything useful, and what breaks first as you shrink it.
 
